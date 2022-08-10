@@ -39,3 +39,11 @@ for ex: Program path: `/mnt/c/Web Development/My Projects/Blockchain/solana/anch
 here i had two spaces at _Web Development_ and _My Project_ which were giving me the error - _something about signer_
 
 after removing those spaces the contract deployed successfully :)
+
+# Testing
+
+- the first error you might get is _module not found @project-serum/anchor_ so just install it with
+  `yarn add yarn add @project-serum/anchor`
+
+- if you are on devnet then change the provider to devnet, or just use the configuration set in Anchor.toml
+  `const provider = anchor.AnchorProvider.env();`
